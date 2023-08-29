@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 13%;
+    --foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply max-w-7xl w-full px-4 2xl:px-0 mx-auto flex flex-col text-white;
+  }
+}
+
+.card-bg {
+  background-color: #5a5a5a25;
+  background-image: linear-gradient(
+    135deg,
+    rgba(29, 22, 22, 1) 16.1%,
+    #000 100%
+  );
+}
